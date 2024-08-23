@@ -1,0 +1,138 @@
+#!/bin/bash
+
+#SBATCH --job-name=align
+#SBATCH -A christ99
+#SBATCH -t 336:00:00
+#SBATCH -n 100
+
+
+cd /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz
+
+module purge
+module load biocontainers
+module load stringtie/2.2.1
+module load gffcompare/0.11.2
+
+
+# create assembly per sample
+stringtie s001.sorted.bam -l s2 -p 4 -G salmon.gtf -o s001.sorted.bam.gtf
+stringtie s002.sorted.bam -l s2 -p 4 -G salmon.gtf -o s002.sorted.bam.gtf
+stringtie s003.sorted.bam -l s2 -p 4 -G salmon.gtf -o s003.sorted.bam.gtf
+stringtie s004.sorted.bam -l s2 -p 4 -G salmon.gtf -o s004.sorted.bam.gtf
+stringtie s005.sorted.bam -l s2 -p 4 -G salmon.gtf -o s005.sorted.bam.gtf
+stringtie s006.sorted.bam -l s2 -p 4 -G salmon.gtf -o s006.sorted.bam.gtf
+stringtie s007.sorted.bam -l s2 -p 4 -G salmon.gtf -o s007.sorted.bam.gtf
+stringtie s008.sorted.bam -l s2 -p 4 -G salmon.gtf -o s008.sorted.bam.gtf
+stringtie s009.sorted.bam -l s2 -p 4 -G salmon.gtf -o s009.sorted.bam.gtf
+stringtie s010.sorted.bam -l s2 -p 4 -G salmon.gtf -o s010.sorted.bam.gtf
+stringtie s011.sorted.bam -l s2 -p 4 -G salmon.gtf -o s011.sorted.bam.gtf
+stringtie s012.sorted.bam -l s2 -p 4 -G salmon.gtf -o s012.sorted.bam.gtf
+stringtie s013.sorted.bam -l s2 -p 4 -G salmon.gtf -o s013.sorted.bam.gtf
+stringtie s014.sorted.bam -l s2 -p 4 -G salmon.gtf -o s014.sorted.bam.gtf
+stringtie s015.sorted.bam -l s2 -p 4 -G salmon.gtf -o s015.sorted.bam.gtf
+stringtie s016.sorted.bam -l s2 -p 4 -G salmon.gtf -o s016.sorted.bam.gtf
+stringtie s017.sorted.bam -l s2 -p 4 -G salmon.gtf -o s017.sorted.bam.gtf
+stringtie s018.sorted.bam -l s2 -p 4 -G salmon.gtf -o s018.sorted.bam.gtf
+stringtie s019.sorted.bam -l s2 -p 4 -G salmon.gtf -o s019.sorted.bam.gtf
+stringtie s020.sorted.bam -l s2 -p 4 -G salmon.gtf -o s020.sorted.bam.gtf
+stringtie s021.sorted.bam -l s2 -p 4 -G salmon.gtf -o s021.sorted.bam.gtf
+stringtie s022.sorted.bam -l s2 -p 4 -G salmon.gtf -o s022.sorted.bam.gtf
+stringtie s023.sorted.bam -l s2 -p 4 -G salmon.gtf -o s023.sorted.bam.gtf
+stringtie s024.sorted.bam -l s2 -p 4 -G salmon.gtf -o s024.sorted.bam.gtf
+stringtie s025.sorted.bam -l s2 -p 4 -G salmon.gtf -o s025.sorted.bam.gtf
+stringtie s026.sorted.bam -l s2 -p 4 -G salmon.gtf -o s026.sorted.bam.gtf
+stringtie s027.sorted.bam -l s2 -p 4 -G salmon.gtf -o s027.sorted.bam.gtf
+stringtie s028.sorted.bam -l s2 -p 4 -G salmon.gtf -o s028.sorted.bam.gtf
+stringtie s029.sorted.bam -l s2 -p 4 -G salmon.gtf -o s029.sorted.bam.gtf
+stringtie s030.sorted.bam -l s2 -p 4 -G salmon.gtf -o s030.sorted.bam.gtf
+stringtie s031.sorted.bam -l s2 -p 4 -G salmon.gtf -o s031.sorted.bam.gtf
+stringtie s032.sorted.bam -l s2 -p 4 -G salmon.gtf -o s032.sorted.bam.gtf
+stringtie s033.sorted.bam -l s2 -p 4 -G salmon.gtf -o s033.sorted.bam.gtf
+stringtie s034.sorted.bam -l s2 -p 4 -G salmon.gtf -o s034.sorted.bam.gtf
+stringtie s035.sorted.bam -l s2 -p 4 -G salmon.gtf -o s035.sorted.bam.gtf
+stringtie s036.sorted.bam -l s2 -p 4 -G salmon.gtf -o s036.sorted.bam.gtf
+stringtie s037.sorted.bam -l s2 -p 4 -G salmon.gtf -o s037.sorted.bam.gtf
+stringtie s038.sorted.bam -l s2 -p 4 -G salmon.gtf -o s038.sorted.bam.gtf
+stringtie s039.sorted.bam -l s2 -p 4 -G salmon.gtf -o s039.sorted.bam.gtf
+stringtie s040.sorted.bam -l s2 -p 4 -G salmon.gtf -o s040.sorted.bam.gtf
+stringtie s041.sorted.bam -l s2 -p 4 -G salmon.gtf -o s041.sorted.bam.gtf
+stringtie s042.sorted.bam -l s2 -p 4 -G salmon.gtf -o s042.sorted.bam.gtf
+stringtie s043.sorted.bam -l s2 -p 4 -G salmon.gtf -o s043.sorted.bam.gtf
+stringtie s044.sorted.bam -l s2 -p 4 -G salmon.gtf -o s044.sorted.bam.gtf
+stringtie s045.sorted.bam -l s2 -p 4 -G salmon.gtf -o s045.sorted.bam.gtf
+stringtie s046.sorted.bam -l s2 -p 4 -G salmon.gtf -o s046.sorted.bam.gtf
+stringtie s047.sorted.bam -l s2 -p 4 -G salmon.gtf -o s047.sorted.bam.gtf
+stringtie s048.sorted.bam -l s2 -p 4 -G salmon.gtf -o s048.sorted.bam.gtf
+stringtie s049.sorted.bam -l s2 -p 4 -G salmon.gtf -o s049.sorted.bam.gtf
+stringtie s050.sorted.bam -l s2 -p 4 -G salmon.gtf -o s050.sorted.bam.gtf
+stringtie s051.sorted.bam -l s2 -p 4 -G salmon.gtf -o s051.sorted.bam.gtf
+stringtie s052.sorted.bam -l s2 -p 4 -G salmon.gtf -o s052.sorted.bam.gtf
+stringtie s053.sorted.bam -l s2 -p 4 -G salmon.gtf -o s053.sorted.bam.gtf
+stringtie s054.sorted.bam -l s2 -p 4 -G salmon.gtf -o s054.sorted.bam.gtf
+stringtie s055.sorted.bam -l s2 -p 4 -G salmon.gtf -o s055.sorted.bam.gtf
+stringtie s056.sorted.bam -l s2 -p 4 -G salmon.gtf -o s056.sorted.bam.gtf
+stringtie s057.sorted.bam -l s2 -p 4 -G salmon.gtf -o s057.sorted.bam.gtf
+stringtie s058.sorted.bam -l s2 -p 4 -G salmon.gtf -o s058.sorted.bam.gtf
+stringtie s059.sorted.bam -l s2 -p 4 -G salmon.gtf -o s059.sorted.bam.gtf
+stringtie s060.sorted.bam -l s2 -p 4 -G salmon.gtf -o s060.sorted.bam.gtf
+stringtie s061.sorted.bam -l s2 -p 4 -G salmon.gtf -o s061.sorted.bam.gtf
+stringtie s062.sorted.bam -l s2 -p 4 -G salmon.gtf -o s062.sorted.bam.gtf
+stringtie s063.sorted.bam -l s2 -p 4 -G salmon.gtf -o s063.sorted.bam.gtf
+stringtie s064.sorted.bam -l s2 -p 4 -G salmon.gtf -o s064.sorted.bam.gtf
+stringtie s065.sorted.bam -l s2 -p 4 -G salmon.gtf -o s065.sorted.bam.gtf
+stringtie s066.sorted.bam -l s2 -p 4 -G salmon.gtf -o s066.sorted.bam.gtf
+stringtie s067.sorted.bam -l s2 -p 4 -G salmon.gtf -o s067.sorted.bam.gtf
+stringtie s068.sorted.bam -l s2 -p 4 -G salmon.gtf -o s068.sorted.bam.gtf
+stringtie s069.sorted.bam -l s2 -p 4 -G salmon.gtf -o s069.sorted.bam.gtf
+stringtie s070.sorted.bam -l s2 -p 4 -G salmon.gtf -o s070.sorted.bam.gtf
+stringtie s071.sorted.bam -l s2 -p 4 -G salmon.gtf -o s071.sorted.bam.gtf
+stringtie s072.sorted.bam -l s2 -p 4 -G salmon.gtf -o s072.sorted.bam.gtf
+stringtie s073.sorted.bam -l s2 -p 4 -G salmon.gtf -o s073.sorted.bam.gtf
+stringtie s074.sorted.bam -l s2 -p 4 -G salmon.gtf -o s074.sorted.bam.gtf
+stringtie s075.sorted.bam -l s2 -p 4 -G salmon.gtf -o s075.sorted.bam.gtf
+stringtie s076.sorted.bam -l s2 -p 4 -G salmon.gtf -o s076.sorted.bam.gtf
+stringtie s077.sorted.bam -l s2 -p 4 -G salmon.gtf -o s077.sorted.bam.gtf
+stringtie s078.sorted.bam -l s2 -p 4 -G salmon.gtf -o s078.sorted.bam.gtf
+stringtie s079.sorted.bam -l s2 -p 4 -G salmon.gtf -o s079.sorted.bam.gtf
+stringtie s080.sorted.bam -l s2 -p 4 -G salmon.gtf -o s080.sorted.bam.gtf
+stringtie s081.sorted.bam -l s2 -p 4 -G salmon.gtf -o s081.sorted.bam.gtf
+stringtie s082.sorted.bam -l s2 -p 4 -G salmon.gtf -o s082.sorted.bam.gtf
+stringtie s083.sorted.bam -l s2 -p 4 -G salmon.gtf -o s083.sorted.bam.gtf
+stringtie s084.sorted.bam -l s2 -p 4 -G salmon.gtf -o s084.sorted.bam.gtf
+stringtie s085.sorted.bam -l s2 -p 4 -G salmon.gtf -o s085.sorted.bam.gtf
+stringtie s086.sorted.bam -l s2 -p 4 -G salmon.gtf -o s086.sorted.bam.gtf
+stringtie s087.sorted.bam -l s2 -p 4 -G salmon.gtf -o s087.sorted.bam.gtf
+stringtie s088.sorted.bam -l s2 -p 4 -G salmon.gtf -o s088.sorted.bam.gtf
+stringtie s089.sorted.bam -l s2 -p 4 -G salmon.gtf -o s089.sorted.bam.gtf
+stringtie s090.sorted.bam -l s2 -p 4 -G salmon.gtf -o s090.sorted.bam.gtf
+stringtie s091.sorted.bam -l s2 -p 4 -G salmon.gtf -o s091.sorted.bam.gtf
+stringtie s092.sorted.bam -l s2 -p 4 -G salmon.gtf -o s092.sorted.bam.gtf
+stringtie s093.sorted.bam -l s2 -p 4 -G salmon.gtf -o s093.sorted.bam.gtf
+stringtie s094.sorted.bam -l s2 -p 4 -G salmon.gtf -o s094.sorted.bam.gtf
+stringtie s095.sorted.bam -l s2 -p 4 -G salmon.gtf -o s095.sorted.bam.gtf
+stringtie s096.sorted.bam -l s2 -p 4 -G salmon.gtf -o s096.sorted.bam.gtf
+stringtie s097.sorted.bam -l s2 -p 4 -G salmon.gtf -o s097.sorted.bam.gtf
+stringtie s098.sorted.bam -l s2 -p 4 -G salmon.gtf -o s098.sorted.bam.gtf
+stringtie s099.sorted.bam -l s2 -p 4 -G salmon.gtf -o s099.sorted.bam.gtf
+stringtie s100.sorted.bam -l s2 -p 4 -G salmon.gtf -o s100.sorted.bam.gtf
+stringtie s101.sorted.bam -l s2 -p 4 -G salmon.gtf -o s101.sorted.bam.gtf
+stringtie s102.sorted.bam -l s2 -p 4 -G salmon.gtf -o s102.sorted.bam.gtf
+stringtie s103.sorted.bam -l s2 -p 4 -G salmon.gtf -o s103.sorted.bam.gtf
+stringtie s104.sorted.bam -l s2 -p 4 -G salmon.gtf -o s104.sorted.bam.gtf
+stringtie s105.sorted.bam -l s2 -p 4 -G salmon.gtf -o s105.sorted.bam.gtf
+stringtie s106.sorted.bam -l s2 -p 4 -G salmon.gtf -o s106.sorted.bam.gtf
+stringtie s107.sorted.bam -l s2 -p 4 -G salmon.gtf -o s107.sorted.bam.gtf
+stringtie s108.sorted.bam -l s2 -p 4 -G salmon.gtf -o s108.sorted.bam.gtf
+stringtie s109.sorted.bam -l s2 -p 4 -G salmon.gtf -o s109.sorted.bam.gtf
+stringtie s110.sorted.bam -l s2 -p 4 -G salmon.gtf -o s110.sorted.bam.gtf
+stringtie s111.sorted.bam -l s2 -p 4 -G salmon.gtf -o s111.sorted.bam.gtf
+stringtie s112.sorted.bam -l s2 -p 4 -G salmon.gtf -o s112.sorted.bam.gtf
+stringtie s113.sorted.bam -l s2 -p 4 -G salmon.gtf -o s113.sorted.bam.gtf
+stringtie s114.sorted.bam -l s2 -p 4 -G salmon.gtf -o s114.sorted.bam.gtf
+stringtie s115.sorted.bam -l s2 -p 4 -G salmon.gtf -o s115.sorted.bam.gtf
+stringtie s116.sorted.bam -l s2 -p 4 -G salmon.gtf -o s116.sorted.bam.gtf
+stringtie s117.sorted.bam -l s2 -p 4 -G salmon.gtf -o s117.sorted.bam.gtf
+stringtie s118.sorted.bam -l s2 -p 4 -G salmon.gtf -o s118.sorted.bam.gtf
+stringtie s119.sorted.bam -l s2 -p 4 -G salmon.gtf -o s119.sorted.bam.gtf
+stringtie s120.sorted.bam -l s2 -p 4 -G salmon.gtf -o s120.sorted.bam.gtf
+

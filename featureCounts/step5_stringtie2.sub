@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#SBATCH --job-name=align
+#SBATCH -A christ99
+#SBATCH -t 336:00:00
+#SBATCH -n 100
+
+
+module purge
+module load biocontainers
+module load stringtie/2.2.1
+
+
+cd /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz
+
+# merge all transcripts from all samples + reference annotation
+stringtie --merge -p 40 \
+-G salmon.gtf \
+-o stringtie_all_merged.gtf mergelist.txt
+

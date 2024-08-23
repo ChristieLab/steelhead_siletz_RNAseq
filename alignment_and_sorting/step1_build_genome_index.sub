@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#SBATCH --job-name=build_index
+#SBATCH -A christ99
+#SBATCH -t 336:00:00
+#SBATCH -n 20
+
+
+#cd $PBS_O_WORKDIR # set this if not using sed in Makefile
+module load biocontainers
+module load hisat2/2.2.1
+
+hisat2-build /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/GCF_013265735.2_USDA_OmykA_1.1_genomic.fna /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index
+

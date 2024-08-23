@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#SBATCH --job-name=align
+#SBATCH -A christ99
+#SBATCH -t 336:00:00
+#SBATCH -n 100
+
+# s013 did not completed becuase not enough memory; redoing here with additional cores
+
+cd /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz
+
+module load biocontainers
+module load samtools
+
+samtools view -Su s013.sam | samtools sort -o s013.sorted.bam

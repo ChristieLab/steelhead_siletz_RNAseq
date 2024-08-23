@@ -1,0 +1,252 @@
+#!/bin/bash
+
+#SBATCH --job-name=align
+#SBATCH -A christ99
+#SBATCH -t 336:00:00
+#SBATCH -n 20
+
+
+#cd $PBS_O_WORKDIR # set this if not using sed in Makefile
+module load biocontainers
+module load hisat2/2.2.1
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s001.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s001.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s001.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s002.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s002.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s002.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s003.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s003.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s003.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s004.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s004.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s004.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s005.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s005.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s005.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s006.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s006.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s006.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s007.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s007.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s007.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s008.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s008.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s008.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s009.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s009.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s009.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s010.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s010.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s010.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s011.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s011.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s011.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s012.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s012.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s012.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s013.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s013.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s013.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s014.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s014.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s014.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s015.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s015.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s015.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s016.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s016.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s016.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s017.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s017.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s017.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s018.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s018.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s018.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s019.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s019.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s019.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s020.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s020.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s020.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s021.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s021.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s021.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s022.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s022.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s022.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s023.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s023.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s023.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s024.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s024.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s024.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s025.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s025.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s025.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s026.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s026.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s026.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s027.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s027.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s027.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s028.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s028.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s028.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s029.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s029.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s029.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s030.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s030.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s030.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s031.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s031.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s031.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s032.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s032.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s032.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s033.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s033.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s033.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s034.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s034.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s034.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s035.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s035.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s035.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s036.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s036.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s036.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s037.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s037.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s037.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s038.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s038.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s038.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s039.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s039.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s039.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s040.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s040.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s040.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s041.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s041.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s041.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s042.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s042.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s042.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s043.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s043.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s043.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s044.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s044.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s044.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s045.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s045.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s045.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s046.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s046.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s046.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s047.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s047.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s047.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s048.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s048.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s048.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s049.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s049.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s049.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s050.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s050.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s050.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s051.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s051.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s051.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s052.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s052.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s052.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s053.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s053.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s053.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s054.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s054.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s054.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s055.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s055.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s055.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s056.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s056.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s056.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s057.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s057.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s057.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s058.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s058.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s058.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s059.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s059.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s059.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s060.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s060.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s060.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s061.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s061.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s061.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s062.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s062.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s062.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s063.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s063.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s063.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s064.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s064.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s064.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s065.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s065.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s065.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s066.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s066.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s066.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s067.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s067.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s067.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s068.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s068.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s068.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s069.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s069.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s069.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s070.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s070.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s070.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s071.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s071.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s071.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s072.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s072.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s072.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s073.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s073.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s073.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s074.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s074.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s074.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s075.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s075.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s075.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s076.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s076.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s076.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s077.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s077.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s077.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s078.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s078.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s078.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s079.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s079.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s079.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s080.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s080.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s080.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s081.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s081.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s081.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s082.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s082.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s082.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s083.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s083.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s083.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s084.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s084.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s084.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s085.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s085.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s085.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s086.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s086.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s086.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s087.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s087.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s087.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s088.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s088.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s088.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s089.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s089.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s089.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s090.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s090.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s090.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s091.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s091.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s091.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s092.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s092.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s092.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s093.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s093.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s093.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s094.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s094.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s094.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s095.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s095.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s095.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s096.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s096.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s096.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s097.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s097.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s097.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s098.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s098.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s098.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s099.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s099.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s099.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s100.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s100.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s100.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s101.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s101.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s101.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s102.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s102.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s102.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s103.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s103.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s103.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s104.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s104.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s104.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s105.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s105.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s105.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s106.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s106.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s106.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s107.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s107.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s107.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s108.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s108.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s108.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s109.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s109.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s109.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s110.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s110.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s110.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s111.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s111.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s111.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s112.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s112.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s112.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s113.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s113.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s113.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s114.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s114.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s114.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s115.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s115.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s115.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s116.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s116.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s116.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s117.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s117.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s117.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s118.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s118.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s118.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s119.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s119.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s119.R2.fastq.gz
+
+hisat2 --dta --time --threads 20 -S /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s120}.sam -x /scratch/negishi/christ99/steelhead_rna-seq/reads/genome/USDA_OmykA_1.1/mykiss_1.1_index -1 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s120.R1.fastq.gz -2 /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz/s120.R2.fastq.gz
+

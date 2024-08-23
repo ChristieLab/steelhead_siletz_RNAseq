@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#SBATCH --job-name=align
+#SBATCH -A christ99
+#SBATCH -t 336:00:00
+#SBATCH -n 150
+
+
+module purge
+module load biocontainers
+#module load subread/2.0.1
+module load subread/1.6.4
+
+cd /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz
+
+
+# -p = is paired-end; -B = require that fragments have both ends successfully aligned; -C
+# = chimeric fragments (ends mapped to 2 different chroms) not counted
+
+featureCounts -p -B -C -T 64 -t exon -g gene_id -a new.gtf -o featureCount_counts.txt s001.sorted.bam s002.sorted.bam s003.sorted.bam s004.sorted.bam s005.sorted.bam s006.sorted.bam s007.sorted.bam s008.sorted.bam s009.sorted.bam s010.sorted.bam s011.sorted.bam s012.sorted.bam s013.sorted.bam s014.sorted.bam s015.sorted.bam s016.sorted.bam s017.sorted.bam s018.sorted.bam s019.sorted.bam s020.sorted.bam s021.sorted.bam s022.sorted.bam s023.sorted.bam s024.sorted.bam s025.sorted.bam s026.sorted.bam s027.sorted.bam s028.sorted.bam s029.sorted.bam s030.sorted.bam s031.sorted.bam s032.sorted.bam s033.sorted.bam s034.sorted.bam s035.sorted.bam s036.sorted.bam s037.sorted.bam s038.sorted.bam s039.sorted.bam s040.sorted.bam s041.sorted.bam s042.sorted.bam s043.sorted.bam s044.sorted.bam s045.sorted.bam s046.sorted.bam s047.sorted.bam s048.sorted.bam s049.sorted.bam s050.sorted.bam s051.sorted.bam s052.sorted.bam s053.sorted.bam s054.sorted.bam s055.sorted.bam s056.sorted.bam s057.sorted.bam s058.sorted.bam s059.sorted.bam s060.sorted.bam s061.sorted.bam s062.sorted.bam s063.sorted.bam s064.sorted.bam s065.sorted.bam s066.sorted.bam s067.sorted.bam s068.sorted.bam s069.sorted.bam s070.sorted.bam s071.sorted.bam s072.sorted.bam s073.sorted.bam s074.sorted.bam s075.sorted.bam s076.sorted.bam s077.sorted.bam s078.sorted.bam s079.sorted.bam s080.sorted.bam s081.sorted.bam s082.sorted.bam s083.sorted.bam s084.sorted.bam s085.sorted.bam s086.sorted.bam s087.sorted.bam s088.sorted.bam s089.sorted.bam s090.sorted.bam s091.sorted.bam s092.sorted.bam s093.sorted.bam s094.sorted.bam s095.sorted.bam s096.sorted.bam s097.sorted.bam s098.sorted.bam s099.sorted.bam s100.sorted.bam s101.sorted.bam s102.sorted.bam s103.sorted.bam s104.sorted.bam s105.sorted.bam s106.sorted.bam s107.sorted.bam s108.sorted.bam s109.sorted.bam s110.sorted.bam s111.sorted.bam s112.sorted.bam s113.sorted.bam s114.sorted.bam s115.sorted.bam s116.sorted.bam s117.sorted.bam s118.sorted.bam s119.sorted.bam s120.sorted.bam

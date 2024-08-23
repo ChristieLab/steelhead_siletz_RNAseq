@@ -1,0 +1,132 @@
+#!/bin/bash
+
+#SBATCH --job-name=align
+#SBATCH -A christ99
+#SBATCH -t 336:00:00
+#SBATCH -n 40
+
+cd /scratch/negishi/christ99/steelhead_rna-seq/reads/siletz
+
+module load biocontainers
+module load samtools
+
+samtools view -Su s001.sam | samtools sort -o s001.sorted.bam
+samtools view -Su s002.sam | samtools sort -o s002.sorted.bam
+samtools view -Su s003.sam | samtools sort -o s003.sorted.bam
+samtools view -Su s004.sam | samtools sort -o s004.sorted.bam
+samtools view -Su s005.sam | samtools sort -o s005.sorted.bam
+samtools view -Su s006.sam | samtools sort -o s006.sorted.bam
+samtools view -Su s007.sam | samtools sort -o s007.sorted.bam
+samtools view -Su s008.sam | samtools sort -o s008.sorted.bam
+samtools view -Su s009.sam | samtools sort -o s009.sorted.bam
+samtools view -Su s010.sam | samtools sort -o s010.sorted.bam
+samtools view -Su s011.sam | samtools sort -o s011.sorted.bam
+samtools view -Su s012.sam | samtools sort -o s012.sorted.bam
+samtools view -Su s013.sam | samtools sort -o s013.sorted.bam
+samtools view -Su s014.sam | samtools sort -o s014.sorted.bam
+samtools view -Su s015.sam | samtools sort -o s015.sorted.bam
+samtools view -Su s016.sam | samtools sort -o s016.sorted.bam
+samtools view -Su s017.sam | samtools sort -o s017.sorted.bam
+samtools view -Su s018.sam | samtools sort -o s018.sorted.bam
+samtools view -Su s019.sam | samtools sort -o s019.sorted.bam
+samtools view -Su s020.sam | samtools sort -o s020.sorted.bam
+samtools view -Su s021.sam | samtools sort -o s021.sorted.bam
+samtools view -Su s022.sam | samtools sort -o s022.sorted.bam
+samtools view -Su s023.sam | samtools sort -o s023.sorted.bam
+samtools view -Su s024.sam | samtools sort -o s024.sorted.bam
+samtools view -Su s025.sam | samtools sort -o s025.sorted.bam
+samtools view -Su s026.sam | samtools sort -o s026.sorted.bam
+samtools view -Su s027.sam | samtools sort -o s027.sorted.bam
+samtools view -Su s028.sam | samtools sort -o s028.sorted.bam
+samtools view -Su s029.sam | samtools sort -o s029.sorted.bam
+samtools view -Su s030.sam | samtools sort -o s030.sorted.bam
+samtools view -Su s031.sam | samtools sort -o s031.sorted.bam
+samtools view -Su s032.sam | samtools sort -o s032.sorted.bam
+samtools view -Su s033.sam | samtools sort -o s033.sorted.bam
+samtools view -Su s034.sam | samtools sort -o s034.sorted.bam
+samtools view -Su s035.sam | samtools sort -o s035.sorted.bam
+samtools view -Su s036.sam | samtools sort -o s036.sorted.bam
+samtools view -Su s037.sam | samtools sort -o s037.sorted.bam
+samtools view -Su s038.sam | samtools sort -o s038.sorted.bam
+samtools view -Su s039.sam | samtools sort -o s039.sorted.bam
+samtools view -Su s040.sam | samtools sort -o s040.sorted.bam
+samtools view -Su s041.sam | samtools sort -o s041.sorted.bam
+samtools view -Su s042.sam | samtools sort -o s042.sorted.bam
+samtools view -Su s043.sam | samtools sort -o s043.sorted.bam
+samtools view -Su s044.sam | samtools sort -o s044.sorted.bam
+samtools view -Su s045.sam | samtools sort -o s045.sorted.bam
+samtools view -Su s046.sam | samtools sort -o s046.sorted.bam
+samtools view -Su s047.sam | samtools sort -o s047.sorted.bam
+samtools view -Su s048.sam | samtools sort -o s048.sorted.bam
+samtools view -Su s049.sam | samtools sort -o s049.sorted.bam
+samtools view -Su s050.sam | samtools sort -o s050.sorted.bam
+samtools view -Su s051.sam | samtools sort -o s051.sorted.bam
+samtools view -Su s052.sam | samtools sort -o s052.sorted.bam
+samtools view -Su s053.sam | samtools sort -o s053.sorted.bam
+samtools view -Su s054.sam | samtools sort -o s054.sorted.bam
+samtools view -Su s055.sam | samtools sort -o s055.sorted.bam
+samtools view -Su s056.sam | samtools sort -o s056.sorted.bam
+samtools view -Su s057.sam | samtools sort -o s057.sorted.bam
+samtools view -Su s058.sam | samtools sort -o s058.sorted.bam
+samtools view -Su s059.sam | samtools sort -o s059.sorted.bam
+samtools view -Su s060.sam | samtools sort -o s060.sorted.bam
+samtools view -Su s061.sam | samtools sort -o s061.sorted.bam
+samtools view -Su s062.sam | samtools sort -o s062.sorted.bam
+samtools view -Su s063.sam | samtools sort -o s063.sorted.bam
+samtools view -Su s064.sam | samtools sort -o s064.sorted.bam
+samtools view -Su s065.sam | samtools sort -o s065.sorted.bam
+samtools view -Su s066.sam | samtools sort -o s066.sorted.bam
+samtools view -Su s067.sam | samtools sort -o s067.sorted.bam
+samtools view -Su s068.sam | samtools sort -o s068.sorted.bam
+samtools view -Su s069.sam | samtools sort -o s069.sorted.bam
+samtools view -Su s070.sam | samtools sort -o s070.sorted.bam
+samtools view -Su s071.sam | samtools sort -o s071.sorted.bam
+samtools view -Su s072.sam | samtools sort -o s072.sorted.bam
+samtools view -Su s073.sam | samtools sort -o s073.sorted.bam
+samtools view -Su s074.sam | samtools sort -o s074.sorted.bam
+samtools view -Su s075.sam | samtools sort -o s075.sorted.bam
+samtools view -Su s076.sam | samtools sort -o s076.sorted.bam
+samtools view -Su s077.sam | samtools sort -o s077.sorted.bam
+samtools view -Su s078.sam | samtools sort -o s078.sorted.bam
+samtools view -Su s079.sam | samtools sort -o s079.sorted.bam
+samtools view -Su s080.sam | samtools sort -o s080.sorted.bam
+samtools view -Su s081.sam | samtools sort -o s081.sorted.bam
+samtools view -Su s082.sam | samtools sort -o s082.sorted.bam
+samtools view -Su s083.sam | samtools sort -o s083.sorted.bam
+samtools view -Su s084.sam | samtools sort -o s084.sorted.bam
+samtools view -Su s085.sam | samtools sort -o s085.sorted.bam
+samtools view -Su s086.sam | samtools sort -o s086.sorted.bam
+samtools view -Su s087.sam | samtools sort -o s087.sorted.bam
+samtools view -Su s088.sam | samtools sort -o s088.sorted.bam
+samtools view -Su s089.sam | samtools sort -o s089.sorted.bam
+samtools view -Su s090.sam | samtools sort -o s090.sorted.bam
+samtools view -Su s091.sam | samtools sort -o s091.sorted.bam
+samtools view -Su s092.sam | samtools sort -o s092.sorted.bam
+samtools view -Su s093.sam | samtools sort -o s093.sorted.bam
+samtools view -Su s094.sam | samtools sort -o s094.sorted.bam
+samtools view -Su s095.sam | samtools sort -o s095.sorted.bam
+samtools view -Su s096.sam | samtools sort -o s096.sorted.bam
+samtools view -Su s097.sam | samtools sort -o s097.sorted.bam
+samtools view -Su s098.sam | samtools sort -o s098.sorted.bam
+samtools view -Su s099.sam | samtools sort -o s099.sorted.bam
+samtools view -Su s100.sam | samtools sort -o s100.sorted.bam
+samtools view -Su s101.sam | samtools sort -o s101.sorted.bam
+samtools view -Su s102.sam | samtools sort -o s102.sorted.bam
+samtools view -Su s103.sam | samtools sort -o s103.sorted.bam
+samtools view -Su s104.sam | samtools sort -o s104.sorted.bam
+samtools view -Su s105.sam | samtools sort -o s105.sorted.bam
+samtools view -Su s106.sam | samtools sort -o s106.sorted.bam
+samtools view -Su s107.sam | samtools sort -o s107.sorted.bam
+samtools view -Su s108.sam | samtools sort -o s108.sorted.bam
+samtools view -Su s109.sam | samtools sort -o s109.sorted.bam
+samtools view -Su s110.sam | samtools sort -o s110.sorted.bam
+samtools view -Su s111.sam | samtools sort -o s111.sorted.bam
+samtools view -Su s112.sam | samtools sort -o s112.sorted.bam
+samtools view -Su s113.sam | samtools sort -o s113.sorted.bam
+samtools view -Su s114.sam | samtools sort -o s114.sorted.bam
+samtools view -Su s115.sam | samtools sort -o s115.sorted.bam
+samtools view -Su s116.sam | samtools sort -o s116.sorted.bam
+samtools view -Su s117.sam | samtools sort -o s117.sorted.bam
+samtools view -Su s118.sam | samtools sort -o s118.sorted.bam
+samtools view -Su s119.sam | samtools sort -o s119.sorted.bam
+samtools view -Su s120.sam | samtools sort -o s120.sorted.bam
