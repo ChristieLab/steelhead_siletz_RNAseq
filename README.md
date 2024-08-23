@@ -1,4 +1,4 @@
-# kellets_whelk_rnaseq
+# Siletz River RNAseq
 
 ## Project description
 This project examines the genetic effects of a hatchery on Siletz River steelhead (*Oncorhynchus mykiss*). We performed a series of crosses on adult first-generation hatchery-origin and natural-origin steelhead and conducted RNA-Seq on 120 offspring that we reared in a common garden environment. Information for all sequenced offpsring can be found in Table 1.
