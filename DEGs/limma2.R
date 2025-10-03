@@ -1,5 +1,5 @@
 #---------------- Data Description -------------------------------------------------------------------------------------#
-# script written by mark christie on 11/25/2019; contact at markchristie1500@gmail.com
+# script written by mark christie on 11/25/2024 contact at markchristie1500@gmail.com
 
 #set working directory, load libraries, list files
 #setwd("C:/Users/fishf/Dropbox/manuscripts/steelhead_rna-seq/analyses/siletz/differential_expression/limma")
@@ -133,4 +133,5 @@ write.csv(as.data.frame(degenes), file="p_05_degs_no_random_effect.csv")     ## 
 #summary(decideTests(fit))
 #topTable(fit)
 #topTable(fit,coef="WxW",number=170,sort.by="p")
+
 
