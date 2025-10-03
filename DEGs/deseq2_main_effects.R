@@ -1,7 +1,6 @@
 #---------------- Data Description -------------------------------------------------------------------------------------#
-# script written by mark christie on 11/25/2019; contact at markchristie1500@gmail.com
-# Rversion:
-# DESeq2 version:
+# script written by mark christie on 11/25/2024; contact at markchristie1500@gmail.com
+# Rversion: 4.4.3 
 # script modified from Avril Harder, available at: https://github.com/ChristieLab/Salmo_salar_RNAseq
 # covariates include sex, cross date
 # relevant sample data can be found in "sample_info_all.csv"
@@ -215,4 +214,5 @@ for(n in 1:length(unique(dat[, 4]))){
   points(dat[which(dat[, 4] == f), 1], dat[which(dat[, 4] == f), 2], pch = 21, bg = cols[n], cex = 2)
   #text(dat[which(dat[, 4] == f), 1], dat[which(dat[, 4] == f), 2], f, cex = 1.2)
 }
+
 
