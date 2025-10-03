@@ -1,6 +1,6 @@
 #---------------- Data Description -------------------------------------------------------------------------------------#
 # script written by mark christie on June 5, 2024; contact at markchristie1500@gmail.com
-# Rversion: 4.4.0
+# Rversion: 4.4.3
 # all plots exported as pdf at 5.98 x 5.33 dimensions
 
 
@@ -392,3 +392,4 @@ for(n in 1:10000){ # number of replicate data sets
 range(OUT)
 hist(OUT, breaks = 30, xlim = c(50, 200), col="plum2", xlab="Smallest difference in gene counts HW vs WH",border="plum3", main="")
 abline(v=187, col="blue", lty=2, lwd=2)
+
