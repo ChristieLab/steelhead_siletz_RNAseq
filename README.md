@@ -15,4 +15,4 @@ Code for the project are split up into directories:
   
 
 ## Data
-All raw data and sample metadata generated for this project are stored in the NCBI Short Read Archive (SRA) under project PRJNAXXXX (link pending). 
+All raw data and sample metadata generated for this project are stored in the NCBI Short Read Archive (SRA) under project PRJNA1201192 (https://www.ncbi.nlm.nih.gov/sra/PRJNA1201192). 
